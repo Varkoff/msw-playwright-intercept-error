@@ -1,0 +1,37 @@
+{
+	"exclude": ["./cypress", "./cypress.config.ts"],
+	"include": [
+		"./types",
+		"remix.env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"app/routes/__publicLayout/ccst.pdf",
+		"mocks/handlers.js",
+		"mocks/old-index.js"
+	],
+	"compilerOptions": {
+		"lib": ["DOM", "DOM.Iterable", "ES2021"],
+		// "types": ["vitest/globals"],
+		"types": ["jest", "@types/jest"],
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"module": "ES2020",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"target": "ES2020",
+		"strict": true,
+		"allowJs": true,
+		// "importsNotUsedAsValues": "error",
+		"forceConsistentCasingInFileNames": true,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./app/*"]
+		},
+		"skipLibCheck": true,
+		"typeRoots": ["./types", "./node_modules/@types"],
+
+		// Remix takes care of building everything in `remix build`.
+		"noEmit": true
+	}
+}

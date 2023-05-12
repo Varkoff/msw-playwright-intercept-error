@@ -1,0 +1,20 @@
+node_modules
+
+.cache
+.env
+.vercel
+.output
+
+/build/
+/public/build
+/api/index.js
+/api/index.js.map
+.DS_Store
+/test-results/
+# /playwright-report/
+/playwright/.cache/
+/server-build
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/coverage
