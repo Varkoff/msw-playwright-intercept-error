@@ -19,7 +19,7 @@ jobs:
   playwright:
     name: 🎭 Playwright
     timeout-minutes: 60
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     env:
       # PLAYWRIGHT_BROWSERS_PATH: 0
       BACKEND_URL: http://localhost:8000
